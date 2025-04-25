@@ -1,14 +1,15 @@
 # 🚀 DevOps Mini Project – 3MTT Fellows Edition
 
-This project involves setting up a **basic DevOps environment** consisting of:
+This project involves setting up a **basic DevOps environment** as part of the **3MTT DevOps Track**. It covers:
 
 - ✅ Git Version Control
 - ✅ AWS Cloud Setup
 - ✅ MobaXterm for SSH
 - ✅ AWS Console Operations
-- ✅ VirtualBox for Virtual Machine Simulation
-
-It is part of the **3MTT DevOps Track** and aims to provide hands-on experience with industry-standard tools and workflows.
+- ✅ VirtualBox for VM Simulation
+- ✅ GitHub Account Creation
+- ✅ Ubuntu OS Installation in VirtualBox
+- ✅ VS Code Setup
 
 ---
 
@@ -17,129 +18,130 @@ It is part of the **3MTT DevOps Track** and aims to provide hands-on experience 
 1. [Project Overview](#project-overview)
 2. [Tools Covered](#tools-covered)
 3. [Setup Steps](#setup-steps)
-   - Git
-   - AWS Account
-   - MobaXterm
-   - AWS Console
-   - VirtualBox
 4. [Screenshots](#screenshots)
-5. [Author](#author)
-6. [License](#license)
+5. [Folder Structure](#folder-structure)
+6. [Author](#author)
+7. [License](#license)
 
 ---
 
 ## 📌 Project Overview
 
-This project serves as a foundational environment for future DevOps pipelines, CI/CD automation, server configuration, and infrastructure-as-code.
-
-You’ll walk through real-world tasks:
-
-- Initializing Git repos
-- SSH into EC2 with MobaXterm
-- Creating EC2 instances via AWS Console
-- Using VirtualBox to simulate Linux environments
-- Preparing a full DevOps-ready workspace
+This project builds the foundation for future DevOps pipelines, server setups, cloud operations, and automation. It includes complete setup instructions and validation screenshots as per the instructor's rubric.
 
 ---
 
 ## 🧰 Tools Covered
 
-| Tool        | Purpose                                       |
-| ----------- | --------------------------------------------- |
-| Git         | Version control for source code               |
-| AWS Console | Cloud infrastructure management               |
-| MobaXterm   | SSH client and terminal for accessing servers |
-| VirtualBox  | Local VM testing environment                  |
+| Tool        | Purpose                               |
+| ----------- | ------------------------------------- |
+| Git         | Version control for source code       |
+| AWS Console | Cloud infrastructure management       |
+| MobaXterm   | SSH client for remote access          |
+| VirtualBox  | Local VM testing environment          |
+| Ubuntu OS   | Linux environment setup               |
+| GitHub      | Source code repository hosting        |
+| VS Code     | Code editor and developer environment |
 
 ---
 
 ## ⚙️ Setup Steps
 
-### 🔹 1. Git Setup
+### 🔹 1. VS Code Setup
+
+- Download and install VS Code from [https://code.visualstudio.com/](https://code.visualstudio.com/)
+- Launch and take a screenshot of the Welcome screen
+
+📸 **VS Code Welcome Screen**  
+![VS Code](./screenshots/vscode.png)
+
+---
+
+### 🔹 2. Git Installation Confirmation
 
 - Install Git: [https://git-scm.com/downloads](https://git-scm.com/downloads)
-- Configure Git:
+- Run in terminal:
 
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "your@email.com"
+git --version
 ```
 
-- Initialize a repo:
-
-```bash
-git init
-```
-
-📸 **Git Setup Screenshot**  
-![Git Screenshot](./screenshots/git.png)
+📸 **Git Version Confirmation**  
+![Git Version](./screenshots/git-terminal.png)
 
 ---
 
-### 🔹 2. AWS Account Setup
+### 🔹 3. VirtualBox Installation Confirmation
+
+- Install from [https://www.virtualbox.org/](https://www.virtualbox.org/)
+- Open VirtualBox Manager and screenshot the welcome screen
+
+📸 **VirtualBox Welcome Screen**  
+![VirtualBox](./screenshots/virtual-box.png)
+
+---
+
+### 🔹 4. Ubuntu Installation inside VirtualBox
+
+- Download Ubuntu ISO: [https://ubuntu.com/download](https://ubuntu.com/download)
+- Install it on VirtualBox
+- Screenshot the login screen after installation
+
+📸 **Ubuntu Login Screen**  
+![Ubuntu Login](./screenshots/ubuntu-login.png)
+
+---
+
+### 🔹 5. GitHub Account Setup
+
+- Create a GitHub account: [https://github.com/](https://github.com/)
+- Login and screenshot your dashboard
+
+📸 **GitHub Dashboard**  
+![GitHub](./screenshots/github.png)
+
+---
+
+### 🔹 6. AWS Account Setup
 
 - Sign up at [https://aws.amazon.com/free](https://aws.amazon.com/free)
-- Verify your account
-- Set up billing alerts (optional)
-- Create IAM user with programmatic access
-- Download access key and secret
+- Login to the AWS Management Console
 
-📸 **AWS Account Screenshot**  
-![AWS Account Screenshot](./screenshots/aws.png)
-
----
-
-### 🔹 3. MobaXterm for SSH
-
-- Download from [https://mobaxterm.mobatek.net/](https://mobaxterm.mobatek.net/)
-- Open SSH session with your EC2 instance:
-
-```bash
-ssh -i "your-key.pem" ec2-user@your-ec2-ip
-```
-
-📸 **MobaXterm SSH Screenshot**  
-![MobaXterm Screenshot](./screenshots/mobaxterm.png)
-
----
-
-### 🔹 4. AWS Console (EC2)
-
-- Navigate to EC2 Dashboard
-- Launch a new instance (e.g., Ubuntu)
-- Configure storage and security group (allow port 22 for SSH)
-- Launch and connect via public IP using MobaXterm
-
-📸 **EC2 Instance Launch Screenshot**  
-![EC2 Instance Screenshot](./screenshots/aws.png)
-
----
-
-### 🔹 5. VirtualBox Setup
-
-- Download from [https://www.virtualbox.org/](https://www.virtualbox.org/)
-- Install Linux ISO (e.g., Ubuntu or CentOS)
-- Create and run virtual machines locally
-
-📸 **VirtualBox Screenshot**  
-![VirtualBox Screenshot](./screenshots/virtual-box.png)
+📸 **AWS Console Dashboard**  
+![AWS Console](./screenshots/aws.png)
 
 ---
 
 ## 🖼️ Screenshots
 
-All referenced images are stored in the `/screenshots` directory:
+Stored under `/screenshots`:
 
 ```bash
 screenshots/
-├── git-setup.png
-├── aws-account.png
-├── mobaxterm-ssh.png
-├── ec2-instance.png
-└── virtualbox.png
+├── vscode-welcome.png
+├── git.png
+├── virtual-box.png
+├── ubuntu-login.png
+├── mobaxterm.png
+├── github-dashboard.png
+└── aws.png
 ```
 
-Feel free to replace these with your own actual screenshots during the setup.
+---
+
+## 🗂️ Folder Structure
+
+```bash
+devops-mini-project/
+├── README.md
+├── screenshots/
+│   ├── vscode.png
+│   ├── git-terminal.png
+│   ├── virtualbox-welcome.png
+│   ├── ubuntu-login.png
+│   ├── github-dashboard.png
+│   └── aws-console-dashboard.png
+```
 
 ---
 
