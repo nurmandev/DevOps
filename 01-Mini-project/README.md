@@ -53,6 +53,7 @@ This project builds the foundation for future DevOps pipelines, server setups, c
 - Launch and take a screenshot of the Welcome screen
 
 📸 **VS Code Welcome Screen**  
+![VS Code](./screenshots/vscode-welcome.png)
 ![VS Code](./screenshots/vscode.png)
 
 ---
@@ -77,6 +78,7 @@ git --version
 - Open VirtualBox Manager and screenshot the welcome screen
 
 📸 **VirtualBox Welcome Screen**  
+![VirtualBox](./screenshots/virtual-welcome.png)
 ![VirtualBox](./screenshots/virtual-box.png)
 
 ---
